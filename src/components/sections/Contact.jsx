@@ -10,8 +10,9 @@ export const Contact = () => {
       <RevealOnScroll>
         <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            Let's discuss something cool 👇
+            Let's discuss something cool 
           </h2>
+          👇
           
           <div className="flex justify-center mb-6">
             <a
