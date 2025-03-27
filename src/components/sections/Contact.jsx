@@ -12,7 +12,7 @@ export const Contact = () => {
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Let's discuss something cool 
           </h2>
-          👇
+          
           
           <div className="flex justify-center mb-6">
             <a
