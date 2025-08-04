@@ -84,7 +84,7 @@ export const About = () => {
                 <div>
                   <h4 className="font-semibold">
                     {" "}
-                    MERN Stack Developer (2025/March - Present){" "}
+                    MERN Stack Developer (2023/March - 2025/June){" "}
                   </h4>
                   <p>
                     Developed and maintained Schedule meeting website for MD.
@@ -94,7 +94,7 @@ export const About = () => {
                 <div>
                   <h4 className="font-semibold">
                     {" "}
-                    Intern at Nepal Electricity Authority (2025){" "}
+                    Intern at Nepal Electricity Authority (2023){" "}
                   </h4>
                   <p>
                     Assisted in building front-end components and integration
