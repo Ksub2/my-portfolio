@@ -26,7 +26,7 @@ export const Contact = () => {
           {/* Social Media Buttons */}
           <div className="flex justify-center mt-6 gap-4">
             <a
-              href="https://www.facebook.com/keshab.KRD/"
+              href="https://www.facebook.com/keshab.yo/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-400 text-2xl transition"
