@@ -1,6 +1,14 @@
-import { useEffect } from "react";
-
+/* eslint-disable react/prop-types */
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
+  const handleNavClick = (target, event) => {
+    event.preventDefault();
+    const element = document.querySelector(target);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    setMenuOpen(false);
+  };
+
   return (
     <div
       className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col items-center justify-center
@@ -23,12 +31,10 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
 
       <a
         href="#home"
-        onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+        onClick={(event) => handleNavClick("#home", event)}
+        className={`text-2xl font-semibold text-white my-4 cursor-pointer transform transition duration-300 ease-out hover:text-blue-300 active:translate-x-2
                     ${
-                      menuOpen
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-5"
+                      menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
                     }        
             `}
       >
@@ -36,8 +42,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       </a>
       <a
         href="#about"
-        onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+        onClick={(event) => handleNavClick("#about", event)}
+        className={`text-2xl font-semibold text-white my-4 cursor-pointer transform transition duration-300 ease-out hover:text-blue-300 active:translate-x-2
             ${
               menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }        
@@ -47,8 +53,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       </a>
       <a
         href="#projects"
-        onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+        onClick={(event) => handleNavClick("#projects", event)}
+        className={`text-2xl font-semibold text-white my-4 cursor-pointer transform transition duration-300 ease-out hover:text-blue-300 active:translate-x-2
             ${
               menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }        
@@ -58,8 +64,8 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       </a>
       <a
         href="#contact"
-        onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+        onClick={(event) => handleNavClick("#contact", event)}
+        className={`text-2xl font-semibold text-white my-4 cursor-pointer transform transition duration-300 ease-out hover:text-blue-300 active:translate-x-2
             ${
               menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }        

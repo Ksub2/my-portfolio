@@ -23,8 +23,8 @@ export const About = () => {
             About Me
           </h2>
 
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="text-gray-300 mb-6">
+          <div className="rounded-xl p-8 border border-[var(--border)] hover:-translate-y-1 hover:border-[var(--border-hover)] hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
+            <p className="text-[var(--foreground)] mb-6">
               Passionate developer with expertise in building scalable web
               applications and creating innovative solutions.
             </p>
@@ -65,9 +65,9 @@ export const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="p-6 rounded-xl border border-[var(--border)] hover:-translate-y-1 hover:border-[var(--border-hover)] hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <ul className="list-disc list-inside text-[var(--foreground)] space-y-2">
                 <li>
                   <strong> BSC in Computer Science and Information Technology </strong> - Sagarmatha College of Science and Technology
                   (2021-2025)
@@ -78,9 +78,9 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="p-6 rounded-xl border border-[var(--border)] hover:-translate-y-1 hover:border-[var(--border-hover)] hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
               <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
-              <div className="space-y-4 text-gray-300">
+              <div className="space-y-4 text-[var(--foreground)]">
                 <div>
                   <h4 className="font-semibold">
                     {" "}
